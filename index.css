@@ -1,0 +1,136 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fdf0d5;
+}
+
+.container { 
+  width: 19.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+  gap: 10px;
+  padding: 10px 0;
+  background-color: #fff;
+}
+
+@media(min-width: 600px) {
+  .container {
+    height: 50rem;
+    max-height: 100vh;
+    width: 34.375rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+
+#profile-logo, #chat-logo {
+  width: 2.125rem;
+  height: 2.125rem;
+}
+
+#logo-logo {
+  width: 5.25rem;
+  height: 2.625rem;
+}
+
+main {
+  width: 95%;
+}
+
+#hero-img {
+  width: 18.375rem;
+  height: 27rem;
+  border-radius: 15px;
+}
+
+@media(min-width: 600px) {
+  #hero-img {
+    width: 100%;
+    height: 37rem;
+    max-height: 80vh;
+  }
+}
+
+#hero {
+  position: relative;
+}
+
+#tag {
+  position: absolute;
+  top: 2.5rem;
+  left: 1.24rem;
+  color: #fff;
+}
+
+#tag img {
+  width: 10.625rem;
+  height: 6.313rem;
+  transform: rotate(-30deg);
+}
+
+#desc {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 3px;
+  max-width: 13rem;
+}
+
+#desc span:first-child {
+  font-weight: bold;
+  font-size: 2em;
+  color: #F8F8F8;
+}
+
+#desc span:last-child {
+  font-size: 1.25em;
+  color: #B7B7B7;
+}
+
+#buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.btn {
+  border: none;
+  border-radius: 50%;
+  width: 5.75rem;
+  height: 5.75rem;
+  cursor: pointer;
+  background-color: #fefae0;
+}
+
+.btn img {
+  width: 2.625rem;
+  height: 2.625rem;
+}
+
+#dislike-btn:hover {
+  background-color: #FFE7EF;
+}
+
+#like-btn:hover {
+  background-color: #DBFFF4;
+}
