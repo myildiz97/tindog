@@ -5,7 +5,11 @@ const dogData = [...dogs];
 let isWaiting = false;
 
 const getNewDog = (dogData) => {
-  if (dogData.length > 0) return new Dog(dogData.shift());
+  if (dogData.length > 0) {
+    return new Dog(dogData.shift());
+  } else {
+    return new Dog(dogs[Math.floor(Math.random() * dogs.length)]);
+  }
 };
 
 let currDog = getNewDog(dogData);
