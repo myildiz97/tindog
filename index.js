@@ -25,7 +25,7 @@ const handleLikeClick = () => {
         currDog = getNewDog(dogData);
         render();
         isWaiting = false;
-      }, 3000);
+      }, 1500);
   };
 };
 
@@ -40,7 +40,7 @@ const handleDisLikeClick = () => {
         currDog = getNewDog(dogData);
         render();
         isWaiting = false;
-      }, 3000);
+      }, 1500);
   };
 };
 
