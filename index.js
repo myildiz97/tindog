@@ -22,11 +22,9 @@ const handleLikeClick = () => {
     currDog.hasBeenSwiped && 
       setTimeout(() => {
         currDog.reset();
-        if (dogData.length > 0) {
-          currDog = getNewDog(dogData);
-          render();
-          isWaiting = false;
-        }
+        currDog = getNewDog(dogData);
+        render();
+        isWaiting = false;
       }, 3000);
   };
 };
@@ -39,11 +37,9 @@ const handleDisLikeClick = () => {
     currDog.hasBeenSwiped && 
       setTimeout(() => {
         currDog.reset();
-        if (dogData.length > 0) {
-          currDog = getNewDog(dogData);
-          render();
-          isWaiting = false;
-        }
+        currDog = getNewDog(dogData);
+        render();
+        isWaiting = false;
       }, 3000);
   };
 };
